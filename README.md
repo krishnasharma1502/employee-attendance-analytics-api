@@ -18,7 +18,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-Create a `.env` file with your own MongoDB connection details:
+Create a `.env` file in the project directory with your own MongoDB connection details:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -41,11 +41,11 @@ uvicorn app.main:app --port 8000
 
 ## Verify
 
-- Health: `http://127.0.0.1:8000/health`
-- Interactive API documentation: `http://127.0.0.1:8000/docs`
+- Health: http://127.0.0.1:8000/health
+- Interactive API documentation: http://127.0.0.1:8000/docs
 
 ## Submission
 
-Submit a public Git repository containing `app/main.py`, `requirements.txt`, `REVIEW.md`, `DECISIONS.md`, and this README.
+The public Git repository contains `app/main.py`, `requirements.txt`, `REVIEW.md`, `DECISIONS.md`, and this README.
 
 Do not commit `.env`, credentials, or other secrets.
